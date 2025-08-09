@@ -1,0 +1,29 @@
+.publish-buttons{
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    margin: 40px;
+}
+
+.publish-buttons button{
+    width: 40%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+    color: white;
+}
+
+.publish-buttons button:hover{
+    opacity: 70%;
+    background-color: red;
+}
+
+.B2B-button{
+    background-color: rgb(239, 179, 189);
+}
+
+.B2C-button{
+    background-color: rgb(75, 227, 212);
+}

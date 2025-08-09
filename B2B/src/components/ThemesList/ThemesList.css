@@ -1,0 +1,45 @@
+.image-circle{
+    border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    background-color: #F0EEED;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.theme-container{
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Très petits téléphones */
+@media (max-width: 480px) {
+}
+
+/* Mobiles en général */
+@media (max-width: 640px) {
+.image-circle{
+    width: 160px;
+    height: 160px;
+}
+}
+
+/* Tablettes */
+@media (max-width: 768px) {
+
+}
+
+/* Petits laptops */
+@media (max-width: 1024px) {
+}
+
+/* Grand écran */
+@media (min-width: 1281px) {
+
+}

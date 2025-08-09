@@ -1,0 +1,246 @@
+.add-product-container{
+    /* padding-top: 1rem; */
+    height: min-content;
+    gap: 5px;
+    margin: 50px;
+}
+
+.add-product-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+}
+
+.add-product-grid-item{
+    width: 90%;
+}
+
+h4{
+    margin-bottom: 5px;
+}
+
+.add-product-input{
+    display: flex;
+    justify-items: center;
+    background: white;
+    padding: 10px;
+    border: none;
+}
+
+.add-product-details{
+    display: flex;
+    background: white;
+    padding: 10px;
+    border: none;
+    width: 70%;
+}
+
+.add-product-input-text{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+.add-product-input-paragraph{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    height: 100px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+input, textarea:focus{
+    border: none;
+    outline: none;
+}
+
+.add-product-sizes-container{
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.add-product-sizes-label{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.add-product-sizes-label input{
+    height: 25px;
+    width: 25px;
+}
+
+.add-product-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin-bottom: 2px;
+}
+
+.add-product-tags span{
+    padding: 3px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.add-product-tags button{
+    color: red;
+    font-weight: bold;
+}
+
+.add-product-tags-input{
+    display: flex;
+    gap: 2px;
+}
+
+.add-product-tags-input{
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+    border: none;
+}
+
+.add-product-colors{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin: 10px 0px;
+}
+
+.add-product-colors-quantity{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px 0px;
+}
+
+
+.add-product-colors span{
+    padding: 3px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.add-product-colors button{
+    background-color: none;
+    border: none;
+    background: none;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+
+.add-product-colors-quantity span{
+    padding: 3px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.add-product-colors-quantity button{
+    background-color: none;
+    border: none;
+    background: none;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+
+.add-product-colors-input{
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+    border: none;
+    gap: 2px;
+}
+
+.add-product-colors-input input{
+    width: 75%;
+}
+
+.color-sizes{
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    align-items: center;
+}
+
+
+.color-sizes h4{
+    margin-bottom: 0px;
+}
+
+.size-quantity{
+    height: 80%;
+    width: 45px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: medium;
+    margin-bottom: 0px;
+}
+
+.choose-color{
+    border: 0.3px solid black;
+    border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.choose-color input{
+    margin-bottom: 0px;
+}
+
+.pack-qte{
+    display: flex;
+    margin-top: 0px;
+    gap: 5px;
+}
+
+.add-product-price, .add-product-categories{
+    display: flex;
+    gap: 20px;
+}
+
+.add-product-display{
+    width: 500px;
+    height: 500px;
+    margin:auto;
+    position: relative;
+}
+
+.display-product-design{
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    position: absolute;
+}
+
+.display-product{
+    object-fit: contain;
+    width: 50%;
+    height: 50%;
+}

@@ -1,0 +1,38 @@
+.product-container{
+
+}.product-section {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+  .product-section {
+    flex-direction: column;
+    padding: 80px 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .product-section {
+    padding: 0;
+  }
+}
+
+.product-carousel {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.product-carousel-title {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+  position: relative;
+  top: 4.5em;
+}

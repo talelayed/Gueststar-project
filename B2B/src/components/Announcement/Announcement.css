@@ -1,0 +1,9 @@
+.announcement{
+    width: 100vw;
+    background-color: black;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

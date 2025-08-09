@@ -1,0 +1,25 @@
+.categories-strip-container{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 9fr 0.5fr;
+    color: white;
+}
+.categories-strip{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 80px;
+}
+
+.categories-arrow{
+    margin: auto;
+}
+
+.categories-strip-link{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}

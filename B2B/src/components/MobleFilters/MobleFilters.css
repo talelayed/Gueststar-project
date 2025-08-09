@@ -1,0 +1,71 @@
+.menu-icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: black;
+}
+
+/* Backdrop */
+.mobile-menu-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s ease-in-out;
+  z-index: 99998;
+}
+
+/* Panel */
+.mobile-menu-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80vw;
+  max-width: 320px;
+  height: 100%;
+  background-color: white;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.mobile-menu-panel.open {
+  transform: translateX(0%);
+}
+
+/* Header */
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Close button */
+.mobile-menu-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+/* Links */
+.mobile-menu-links {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mobile-menu-link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.mobile-menu-link:hover {
+  color: #81a8ad;
+}

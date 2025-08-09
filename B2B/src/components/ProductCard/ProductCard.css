@@ -1,0 +1,208 @@
+.product-card{
+    width: 250px;
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    cursor: pointer;
+}
+.product-card-container{
+    width: 250px; 
+    height: 250px; 
+    background-color: white; 
+    min-width: 250px; 
+    min-height: 250px; 
+    border-radius: 20px; 
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    position: relative
+}
+.image-container{
+    position: relative;
+    /* min-width: 230px;
+    min-height: 230px; */
+    width: 230px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-image-color{
+    mix-blend-mode: multiply;
+    width: 218px;
+    position: absolute;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
+}
+.product-design{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    aspect-ratio: 1 / 1;
+}
+.product-mask{
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    aspect-ratio: 1 / 1;
+}
+.product-image{
+    height: 220px;
+    width: 220px;
+    aspect-ratio: 1 / 1;
+}
+
+.promo{
+    height: 42px;
+    width: 42px;
+    background-color: rgba(255, 51, 51, 0.1);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    color: #FF3333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card{
+    display: grid;
+}
+
+.product-details{
+    width: 95%;
+    margin: 10px auto ;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.nom-produit{
+    font-weight: bold;
+}
+
+.stars-price{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card-price{
+    display: flex;
+    gap: 10px;
+    margin: auto 0;
+}
+
+.discount{
+    text-decoration: line-through;
+    opacity: 40%;
+}
+
+.colors-cart{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colors{
+    display: flex;
+    gap: 1px;
+}
+
+.color{
+    height: 23px;
+    width: 23px;
+    border: 0.2px solid black;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+}
+
+.dots {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+
+/* Très petits téléphones */
+@media (max-width: 480px) {
+}
+
+/* Mobiles en général */
+@media (max-width: 640px) {
+.product-card{
+    width: 180px; 
+}
+.product-card-container{
+    width: 180px; 
+    height: 180px; 
+    min-width: 180px; 
+    min-height: 180px; 
+    border-radius: 20px; 
+}
+.image-container{
+    min-width: 160px;
+    min-height: 160px;
+    width: 160px;
+    height: 160px;
+}
+
+.product-image{
+    height: 150px;
+    width: 150px;
+}
+.image-container{
+    min-width: 160px;
+    min-height: 160px;
+    width: 160px;
+    height: 160px;
+}
+.product-image-color{
+    height: 148px;
+    width: 148px;
+}
+.product-design{
+    width: 150px;
+    height: 150px
+}
+.product-mask{
+    width: 150px;
+    height: 150px
+}
+.color{
+    height: 18px;
+    width: 18px;
+    border: 0.2px solid black;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+}
+.card-price{
+    gap: 5px;
+}
+.promo{
+    height:35px;
+    width:35px;
+    top: 0px;
+    right: 0px;
+}
+
+}
+
+/* Tablettes */
+@media (max-width: 768px) {
+
+}
+
+/* Petits laptops */
+@media (max-width: 1024px) {
+}
+
+/* Grand écran */
+@media (min-width: 1281px) {
+
+}

@@ -1,0 +1,164 @@
+.boutique-container{
+    margin: 120px auto;
+}
+
+.filters{
+    border: 0.5px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: fit-content;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    margin: 10px auto;
+    opacity: 0.5;
+}
+
+.categories-filter{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.category-filter{
+    display: flex;
+    justify-content: space-between;
+    opacity: 60%;
+}
+
+.filters-price{
+    display: flex;
+    flex-direction: column;
+}
+
+.colors-filter{
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.color-filter{
+    border: 0.3px solid black;
+    background-color: yellow;
+    border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    height: 35px;
+    width: 35px;
+}
+
+.sizes-filter{
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+
+.size-filter{
+    border: 0.3px solid black;
+    border-radius: 50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    background-color: #f0f0f08f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boutique-products{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.products-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.sort{
+    display: flex;
+    gap: 5px;
+    margin: auto 0;
+}
+
+.sort select{
+    border: none;
+    font-weight: bolder;
+    font-size:medium;
+}
+
+.boutique-products-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: min(15px);
+}
+
+/* Très petits téléphones */
+@media (max-width: 480px) {
+}
+
+/* Mobiles en général */
+@media (max-width: 640px) {
+    .filters{
+        display: none !important;
+    }
+    h1{
+        font-size: x-large;
+    }
+    .boutique-products-list{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 0;
+}
+.boutique-products{
+    width: 100%;
+}
+.products-header{
+    margin: 10px;
+}
+}
+
+/* Tablettes */
+@media (max-width: 768px) {
+
+}
+
+/* Petits laptops */
+@media (max-width: 1024px) {
+}
+
+/* Grand écran */
+@media (min-width: 1281px) {
+    .boutique-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    }
+    .boutique-container{
+    width: 95%;
+    }
+}

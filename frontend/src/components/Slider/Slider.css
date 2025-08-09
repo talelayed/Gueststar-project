@@ -1,0 +1,97 @@
+.slider{
+    width: 100%;
+    background-color: white;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slogan{
+    text-transform: uppercase;
+}
+
+.description{
+    margin-top: 30px;
+}
+
+.acheter{
+    background-color: black;
+    border-radius: 50px;
+    padding: 20px;
+    color: white;
+    width: 210px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.acheter:hover{
+    opacity: 60%;
+}
+
+.stat{
+    display: flex;
+    margin-top: 40px;
+}
+
+.hr{
+    border-left:1px solid #bbbbbb;
+    height:50px
+}
+
+.slider-image{
+    width: 100%;
+    height: 300px;
+}
+
+/* Très petits téléphones */
+@media (max-width: 480px) {
+}
+
+/* Mobiles en général */
+@media (max-width: 640px) {
+    .slogan{
+        font-size: 40px;
+    }
+    .presentation{
+    margin: 20px 10px;
+    }
+    .stat{
+    justify-content: space-around;
+    }
+}
+
+/* Tablettes */
+@media (max-width: 768px) {
+
+}
+
+/* Petits laptops */
+@media (max-width: 1024px) {
+
+}
+
+/* Grand écran */
+@media (min-width: 1281px) {
+    .slider{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .slogan{
+        font-size: 70px;
+    }
+    .presentation{
+    margin: 60px 100px;
+    }
+    .stat{
+    width: "70%";
+    justify-content: space-between;
+    }
+}

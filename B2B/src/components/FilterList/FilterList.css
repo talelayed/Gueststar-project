@@ -1,0 +1,16 @@
+.subcategories{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subcategory{
+    cursor: pointer;
+}
+
+.themes-filter{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    opacity: 60%;
+}

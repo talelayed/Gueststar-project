@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Integral CF";
+  src: local("AirbnbCerealLight"),
+    url("../public//assets//fonts/Fontspring-DEMO-integralcf-bold.otf") format("truetype");
+}
+
+.App{
+    /* font-family: Integral CF; */
+}

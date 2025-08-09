@@ -1,0 +1,64 @@
+{
+  "name": "admin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@iconscout/react-unicons": "^2.0.2",
+    "@matharumanpreet00/react-daterange-picker": "^1.0.5",
+    "@mui/material": "^6.1.6",
+    "@reduxjs/toolkit": "^2.8.2",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "ajv": "^8.17.1",
+    "ajv-keywords": "^5.1.0",
+    "apexcharts": "^4.7.0",
+    "axios": "^1.10.0",
+    "framer-motion": "^4.1.17",
+    "konva": "^8.4.3",
+    "react": "^18.3.1",
+    "react-apexcharts": "^1.5.0",
+    "react-circular-progressbar": "^2.1.0",
+    "react-date-range": "^2.0.1",
+    "react-daterange-picker-responsive": "^1.0.9",
+    "react-dom": "^18.3.1",
+    "react-konva": "^18.2.12",
+    "react-multi-carousel": "^2.8.6",
+    "react-redux": "^9.2.0",
+    "react-router-dom": "^6.27.0",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^11.0.5",
+    "redux": "^5.0.1",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^3.1.0",
+    "schema-utils": "^4.3.2",
+    "use-image": "^1.1.4",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

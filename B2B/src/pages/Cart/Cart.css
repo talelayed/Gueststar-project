@@ -1,0 +1,134 @@
+.cart-container{
+    margin: auto;
+}
+
+.cart-container h1{
+    margin-left:8%;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.cart-products{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow:hidden; 
+    overflow-y:scroll;
+    margin: auto;
+}
+
+.cart-summary{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    border: 0.5px solid black;
+    border-radius: 20px;
+}
+
+.cart-summary p{
+    font-size: large;
+    color: black;
+    opacity: 60%;
+}
+
+.cart-summary-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-summary-promocode{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.promocode-item{
+    border-radius: 20px;
+    background-color: rgb(212, 212, 212);
+    opacity: 40%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.promocode-input{
+    background: none;
+    border: none;
+    width: 100%;
+}
+
+.promocode-input:focus{
+    outline: none;
+}
+
+.promocode-button{
+    width: 35%;
+    padding: 15px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.cart-summary-button{
+}
+
+
+.cart-summary-button button{
+    width: 100%;
+    padding: 15px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: black;
+    border: none;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+/* Très petits téléphones */
+@media (max-width: 480px) {
+}
+
+/* Mobiles en général */
+@media (max-width: 640px) {
+    .cart-content{
+    display: block;
+    margin-bottom: 50px;
+    }
+}
+
+/* Tablettes */
+@media (max-width: 768px) {
+
+}
+
+/* Petits laptops */
+@media (max-width: 1024px) {
+}
+
+/* Grand écran */
+@media (min-width: 1281px) {
+    .cart-content{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr auto;
+}
+.cart-products{
+    border: 0.5px solid black;
+    border-radius: 20px;
+    padding: 25px;
+    height: 700px;
+    width: 80%;
+}
+}

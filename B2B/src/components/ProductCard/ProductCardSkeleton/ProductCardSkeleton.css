@@ -1,0 +1,89 @@
+.skeleton {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.skeleton .image-container {
+  position: relative;
+  height: 200px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skeleton-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+}
+
+.skeleton-color {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+}
+
+.skeleton-color-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 5px;
+}
+
+.skeleton-stars,
+.skeleton-price,
+.skeleton-text,
+.skeleton-cart {
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+.nom-produit.skeleton-text {
+  width: 60%;
+  height: 16px;
+}
+
+.skeleton-price {
+  width: 50px;
+}
+
+.skeleton-stars {
+  width: 70px;
+}
+
+.skeleton-cart {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.promo-skeleton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 20px;
+  background-color: #bbb;
+  border-radius: 4px;
+}
+
+/* shimmer effect */
+.shimmer {
+  animation: shimmer 1.5s infinite;
+  background: linear-gradient(to right, #eeeeee 0%, #dddddd 50%, #eeeeee 100%);
+  background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -150% 0;
+  }
+  100% {
+    background-position: 150% 0;
+  }
+}

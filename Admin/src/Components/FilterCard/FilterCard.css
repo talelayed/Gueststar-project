@@ -1,0 +1,11 @@
+.card-container{
+    padding: 20px;
+    width: 140px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-container:hover {
+    box-shadow: 0px 10px 10px 0px white;
+  }

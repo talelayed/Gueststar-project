@@ -1,0 +1,23 @@
+.feedback{
+    width: 90%;
+    margin: auto;
+    height: 200px;
+    border: 0.5px solid #bbbbbb;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+
+.stars{
+    flex: 1;
+}
+
+.name{
+    flex: 1;
+}
+
+.feedback-text{
+    flex: 3;
+}

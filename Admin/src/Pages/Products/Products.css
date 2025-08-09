@@ -1,0 +1,14 @@
+.Products{
+    /* padding-top: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: min-content;
+    gap: 10px;
+    margin: 50px;
+}
+
+.search input:focus{
+    border: none;
+    outline: none;
+}

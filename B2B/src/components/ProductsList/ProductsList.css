@@ -1,0 +1,30 @@
+.products-list-container{
+    width: 90%;
+    margin: auto;
+}
+
+/* Très petits téléphones */
+@media (max-width: 480px) {
+}
+
+/* Mobiles en général */
+@media (max-width: 640px) {
+.products-list-container{
+    width: 100%;
+    margin: auto;
+}
+}
+
+/* Tablettes */
+@media (max-width: 768px) {
+
+}
+
+/* Petits laptops */
+@media (max-width: 1024px) {
+}
+
+/* Grand écran */
+@media (min-width: 1281px) {
+
+}

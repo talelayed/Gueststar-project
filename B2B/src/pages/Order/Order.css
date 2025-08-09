@@ -1,0 +1,45 @@
+.order-title {
+  margin-top: 120px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.order-container {
+  width: 350px;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: white;
+  text-align: center;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-form input,
+.order-form textarea,
+.order-form select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.order-form button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #000;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order-form button:hover {
+  background-color: #333;
+}

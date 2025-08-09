@@ -1,0 +1,41 @@
+.Orders{
+    /* padding-top: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: min-content;
+    gap: 10px;
+    margin: 50px;
+}
+
+.cards-flex{
+    display: flex;
+    gap: 10px;
+    margin: auto auto 10px auto;
+    flex-wrap: wrap;
+}
+
+.filter-title{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.search-parent{
+    display: flex;
+}
+
+.search{
+    width: 25vw;
+    display: flex;
+    justify-items: center;
+    background: white;
+    padding: 10px;
+    border: none;
+}
+
+.search-text{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}

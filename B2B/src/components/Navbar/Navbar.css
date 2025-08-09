@@ -1,0 +1,140 @@
+.container{
+  height: 90px;
+  width: 100vw;
+  z-index: 9999;
+  position: fixed;
+  background-color: white;
+}
+
+.wrapper{
+  height: 100%;
+  padding: 10px 40px;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 4fr 7fr 0.5fr;
+}
+
+.left{
+  display: flex;
+  margin:auto 0 auto 0;
+}
+
+.right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:auto 
+}
+
+.right-item{
+  cursor: pointer;
+  margin: auto 0 auto 15px;
+  font-size: 20px;
+}
+
+.menu-item{
+  cursor: pointer;
+  margin: auto 0 auto 25px;
+  font-size: 20px;
+}
+
+.center{
+    border-radius: 20px;
+    background-color: rgb(212, 212, 212);
+    opacity: 40%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.search{
+  display: flex;
+  background-color: black;
+  border: none;
+  border-radius: 3px;
+}
+
+.search-item{
+  cursor: pointer;
+  margin: auto 10px auto 15px;
+}
+
+.search-input{
+    background: none;
+    border: none;
+    width: 100%;
+}
+
+.search-input:focus{
+    outline: none;
+}
+
+.active {
+  background: white;
+  box-shadow: rgb(0 0 0 / 2%) 0px 1px 1px 0px, rgb(0 0 0 / 3%) 0px 2px 2px 0px,
+    rgb(0 0 0 / 2%) 0px 4px 4px 0px, rgb(0 0 0 / 2%) 0px 8px 8px 0px,
+    rgb(0 0 0 / 2%) 0px 16px 16px 0px;
+  -webkit-transition: background 0.7s ease-in-out;
+  -moz-transition: background 0.7s ease-in-out;
+  -o-transition: background 0.7s ease-in-out;
+  transition: background 0.7s ease-in-out;
+  margin-top: -40px;
+  transition: all 0.7s;
+}
+
+#menu-icon{
+  display: none !important;
+}
+
+#logo{
+  height: 60px;
+}
+
+.profile-menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-icon {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  min-width: 120px;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.dropdown-item {
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px){
+  #menu-icon{
+    display: block !important;
+  }
+  #logo{
+    height: 40px;
+  }
+  .left h1{
+    display: none !important;
+  }
+  .wrapper{
+  padding: 10px 5px;
+}
+}
