@@ -234,8 +234,8 @@ export const Product = () => {
                       design={design.design}
                       productData={productSide}
                       style={{
-                        width: "150px",
-                        height: "150px",
+                        width: "100px",
+                        height: "100px",
                         cursor: "pointer",
                         border:
                         index === mainImageIndex ? "2px solid black" : "1px solid #ccc",
@@ -257,6 +257,24 @@ export const Product = () => {
                 {/* <ProductDescription selectedColor={selectedColor} {...design} setCartCount={setCartCount} /> */}
 
     <div className="details-wrapper">
+      <p>Choisir Couleur:</p>
+                <div className="choose-colors">
+            {products.products && Object.entries(
+              products.products?.find(elt => elt._id === design.design?.linkedProduct)?.colorsAndSizes || {}
+            ).map(([color]) => (
+              <div
+                key={color}
+                className="choose-color"
+                style={{
+                  backgroundColor: color,
+                  cursor: "pointer",
+                  border: color === selectedColor ? "2px solid gray" : "1px solid #ccc",
+                }}
+                onClick={()=>setSelectedColor(color)}
+              />
+            ))}
+                </div>
+      <hr/>
       <p className="details-company">
         {products.products?.find(elt => elt._id === design.design?.linkedProduct)?.category}
       </p>
@@ -285,24 +303,6 @@ export const Product = () => {
       <p className="details-description">
         {design.design?.description}
       </p>
-      <hr/>
-      <p>Choisir Couleur:</p>
-                <div className="choose-colors">
-            {products.products && Object.entries(
-              products.products?.find(elt => elt._id === design.design?.linkedProduct)?.colorsAndSizes || {}
-            ).map(([color]) => (
-              <div
-                key={color}
-                className="choose-color"
-                style={{
-                  backgroundColor: color,
-                  cursor: "pointer",
-                  border: color === selectedColor ? "2px solid gray" : "1px solid #ccc",
-                }}
-                onClick={()=>setSelectedColor(color)}
-              />
-            ))}
-                </div>
       <hr/>
       <p>Contenu d'un pack:</p>
       <div className="choose-sizes">
