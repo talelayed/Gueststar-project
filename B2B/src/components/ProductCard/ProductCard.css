@@ -60,7 +60,7 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    border-radius:50%;
+    border-radius:50%;  
     -moz-border-radius:50%;
     -webkit-border-radius:50%;
     color: #FF3333;
@@ -87,9 +87,10 @@
 }
 
 .stars-price{
+    width: 90%;
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
 
 .card-price{
@@ -185,10 +186,14 @@
     gap: 5px;
 }
 .promo{
-    height:35px;
-    width:35px;
+    height:15px;
+    width:25px;
+    padding: 7px;
     top: 0px;
     right: 0px;
+    border-radius:30%;  
+    -moz-border-radius:30%;
+    -webkit-border-radius:30%;
 }
 
 }

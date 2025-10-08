@@ -5,7 +5,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 import ReactStars from "react-stars";
-import axios from "axios";
 import { StackedImage } from "../StackedImage/StackedImage";
 import { ProductCardSkeleton } from "./ProductCardSkeleton/ProductCardSkeleton";
 import { publicRequest } from "../../RequestMethods";
@@ -18,55 +17,56 @@ export const responsive = {
   }
 };
 
-export const ProductCard = (design) => {
-    const [cardColor, setCardColor] = useState("white")
-
-    useEffect(() => {
-        
-    }, [cardColor])
-
+export const ProductCard = ( design ) => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [cardColors, setCardColors] = useState([]);
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
 
-  const [products, setProducts] = useState([]);
-  const [cardColors, setCardColors] = useState([]);
-
+  // Fetch products
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentColorIndex((prevIndex) => (prevIndex + 1) % cardColors.length);
-    }, 2000); // toutes les 2 secondes
-
-    return () => clearInterval(interval); // nettoyage
-  }, [cardColors.length]);
-
-  const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
     const fetchProducts = async () => {
-        try {
+      try {
         const res = await publicRequest.get("products");
-        
-        setProducts(res.data);
-        
-        setLoading(false);
-        } catch (err) {
+        setProducts(res.data); // suppose res.data = { products: [...] }
+      } catch (err) {
         console.error("Erreur lors du chargement des produits :", err);
+      } finally {
         setLoading(false);
-        }
+      }
     };
+    fetchProducts();
+  }, []);
 
-    fetchProducts();  
-    }, []);
-
-
+  // Update colors when products or design change
   useEffect(() => {
-    
-    setCardColors(Object.entries(products.products?.find(elt => elt._id === design.linkedProduct)?.colorsAndSizes || {}).map(([color]) => color))
-        
-  }, [design.linkedProduct, products.products])
-    
-    if (loading) {
-      return <ProductCardSkeleton />;
+    if (!products.products || !design.linkedProduct) return;
+
+    const product = products.products.find(
+      (elt) => elt._id === design.linkedProduct
+    );
+    if (product && product.colorsAndSizes) {
+      const colors = Object.keys(product.colorsAndSizes);
+      setCardColors(colors);
     }
+  }, [products, design.linkedProduct]);
+
+  // Cycle through colors every 2s
+  useEffect(() => {
+    if (cardColors.length === 0) return;
+    const interval = setInterval(() => {
+      setCurrentColorIndex(
+        (prevIndex) => (prevIndex + 1) % cardColors.length
+      );
+    }, 2000);
+    return () => clearInterval(interval);
+  }, [cardColors]);
+
+  if (loading) {
+    return <ProductCardSkeleton />;
+  }
+
+  const currentColor = cardColors[currentColorIndex] || "white";
 
   return (
 
@@ -106,7 +106,6 @@ export const ProductCard = (design) => {
         <div className="product-details">
             <div className="nom-produit">{design.title}</div>
             <div className="stars-price">
-                <div>
                     <ReactStars
                     classNames="stars"
                         count={5}
@@ -119,7 +118,6 @@ export const ProductCard = (design) => {
                         fullIcon={<i className="fa fa-star"></i>}
                         activeColor="#ffd700"
                     />
-                </div>
                 <div className="card-price">
                     {
                         design.discount && <p className="discount">€ {design.price}</p>
