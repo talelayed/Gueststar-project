@@ -130,12 +130,12 @@ hr {
         font-size: x-large;
     }
     .boutique-products-list{
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin: auto;
-    gap: min(15px);
+    gap: min(10px);
 }
 .boutique-products{
     width: 100%;
