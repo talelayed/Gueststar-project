@@ -135,7 +135,7 @@ hr {
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    gap: 0;
+    gap: min(15px);
 }
 .boutique-products{
     width: 100%;

@@ -14,7 +14,7 @@
     border-radius: 20px; 
     text-align: center;
     margin: auto;
-    padding: 10px;
+
     position: relative
 }
 .image-container{
@@ -107,6 +107,8 @@
 .colors-cart{
     display: flex;
     justify-content: space-between;
+    width: 90%;
+    margin: auto;
 }
 
 .colors{

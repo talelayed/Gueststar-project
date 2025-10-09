@@ -268,7 +268,7 @@ export const Product = () => {
                 style={{
                   backgroundColor: color,
                   cursor: "pointer",
-                  border: color === selectedColor ? "2px solid gray" : "1px solid #ccc",
+                  border: color === selectedColor ? "2px solid gray" : "",
                 }}
                 onClick={()=>setSelectedColor(color)}
               />
