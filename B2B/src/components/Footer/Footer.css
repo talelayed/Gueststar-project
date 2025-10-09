@@ -97,18 +97,24 @@
 .footer-section{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0px;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 8px;
 }
 
 hr{
-    width: 80%;
+    width: 70%;
     margin: auto;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .footer-copyright{
     width: 80%;
-    margin: 20px auto 30px auto;
+    margin: 0px auto 30px auto;
     display: flex;
     justify-content: space-between;
 }

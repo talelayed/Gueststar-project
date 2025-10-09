@@ -1,7 +1,47 @@
+import { useEffect, useState } from "react";
 import "./Footer.css"
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import { publicRequest } from "../../RequestMethods";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const [categories, setCategories] = useState([]);
+  const [themes, setThemes] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const res = await publicRequest.get("categories");
+        setCategories(res.data);
+        
+        
+        setLoading(false);
+      } catch (err) {
+        console.error("Erreur lors du chargement des catégories :", err);
+        setLoading(false);
+      }
+    };
+
+    fetchCategories();
+  }, []);
+
+    useEffect(() => {
+    const fetchThemes = async () => {
+      try {
+        const res = await publicRequest.get("themes");
+        setThemes(res.data);
+        
+        
+        setLoading(false);
+      } catch (err) {
+        console.error("Erreur lors du chargement des catégories :", err);
+        setLoading(false);
+      }
+    };
+
+    fetchThemes();
+  }, []);
   return (
     <div className="footer-container">
       <div className="newsletter">
@@ -21,7 +61,7 @@ const Footer = () => {
       <div className="footer">
         <div className="footer-content">
         <div className="footer-presentation">
-            <h1>Mezyen</h1>
+            <h1>GUESTSTAR</h1>
             <p>
                 Parce que chaque vêtement raconte une histoire, nous créons des modèles uniques, pensés pour toi, où
                 l’authenticité, le style et la qualité s’unissent pour te permettre d’affirmer ta personnalité sans limites.
@@ -33,29 +73,48 @@ const Footer = () => {
                 <div className="social-media"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/1200px-LinkedIn_icon_circle.svg.png" alt="linkedin"/></div>
             </div>
         </div>
+
         <div className="footer-section">
-            <h3>Brand</h3>
-            <p>À propos</p>
-            <p>À propos</p>
-            <p>À propos</p>
+        <h3>Catégories</h3>
+        {
+            categories.categories?.slice(0, 4).map((cat) => (
+            <Link 
+                key={cat._id} 
+                to={`/category/${cat._id}`} 
+                className="footer-link"
+            >
+                {cat.title}
+            </Link>
+            ))
+        }
         </div>
+
         <div className="footer-section">
-            <h3>Catégories</h3>
-            <p>Categorie</p>
-            <p>Categorie</p>
-            <p>Categorie</p>
+        <h3>Thèmes</h3>
+        {
+            themes.themes?.slice(0, 4).map((theme) => (
+            <Link 
+                key={theme._id} 
+                to={`/theme/${theme._id}`} 
+                className="footer-link"
+            >
+                {theme.title}
+            </Link>
+            ))
+        }
         </div>
+
         <div className="footer-section">
-            <h3>Thèmes</h3>
-            <p>Thème</p>
-            <p>Thème</p>
-            <p>Thème</p>
+        <h3>Brand</h3>
+        <Link to="/about" className="footer-link">À propos de nous</Link>
+        <Link to="/clients" className="footer-link">Nos Clients</Link>
         </div>
+
         <div className="footer-section">
-            <h3>Aide</h3>
-            <p>Support client</p>
-            <p>Service Livraison</p>
-            <p>Paiement</p>
+        <h3>Aide</h3>
+        <Link to="/support" className="footer-link">Support client</Link>
+        <Link to="/delivery" className="footer-link">Service Livraison</Link>
+        <Link to="/payment" className="footer-link">Paiement</Link>
         </div>
         </div>
         <hr/>

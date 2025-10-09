@@ -144,7 +144,6 @@
 /* PRODUCT DETAILS */
 .details-wrapper {
   height: fit-content;
-  padding: 0em 2em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -209,7 +208,7 @@
   color: black;
   opacity: 30%;
   text-decoration: line-through;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 /* ADD TO CART BUTTONS */
