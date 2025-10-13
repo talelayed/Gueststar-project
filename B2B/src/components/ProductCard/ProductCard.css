@@ -78,7 +78,7 @@
     margin: 10px auto ;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
     cursor: pointer;
 }
 
@@ -86,22 +86,31 @@
     font-weight: bold;
 }
 
+.category-produit{
+    opacity: 0.5;
+    margin: 0;
+}
+
 .stars-price{
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 30px;
 }
 
 .card-price{
     display: flex;
     gap: 10px;
     margin: auto 0;
+    height: 30px;
+    align-items: center;
 }
 
 .discount{
     text-decoration: line-through;
     opacity: 40%;
+    
 }
 
 .colors-cart{

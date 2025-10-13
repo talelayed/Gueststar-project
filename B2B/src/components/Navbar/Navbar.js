@@ -95,7 +95,7 @@ console.log();
           </Link>
         </div>
         <div className="center">
-        <div classname="search"/>
+        <div className="search"/>
             <h1 className="search-item">
               <SearchIcon sx={{marginTop: "5px", fontSize: 30 }}/>
             </h1>

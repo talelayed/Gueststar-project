@@ -105,6 +105,7 @@ export const ProductCard = ( design ) => {
         </div>
         <div className="product-details">
             <div className="nom-produit">{design.title}</div>
+            <div className="category-produit">{products.products?.find(elt => elt._id === design.linkedProduct).category}</div>
             <div className="stars-price">
                     <ReactStars
                     classNames="stars"

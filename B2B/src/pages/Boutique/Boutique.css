@@ -124,7 +124,8 @@ hr {
 /* Mobiles en général */
 @media (max-width: 640px) {
     .filters{
-        display: none !important;
+        width: 80%;
+        margin: auto;
     }
     h1{
         font-size: x-large;
@@ -152,6 +153,10 @@ hr {
 
 /* Petits laptops */
 @media (max-width: 1024px) {
+    .filters{
+        width: 80%;
+        margin: auto;
+    }
 }
 
 /* Grand écran */

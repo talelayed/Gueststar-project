@@ -22,7 +22,7 @@ function App() {
         <NavBar/>
       <div style={{marginTop:"90px"}}></div>
       <Routes>
-        <Route path="/:category?" element={<Boutique/>} />
+        <Route path="/:category?/:subcategory?" element={<Boutique/>} />
         <Route path="/products/:id" element={<Product/>} />
         <Route path="/cart" element={<Cart/>} />
         <Route path="/order" element={<Order/>} />
