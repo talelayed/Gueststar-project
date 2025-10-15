@@ -54,7 +54,7 @@ export const FilterList = ({ onThemeSelect, selectedTheme, onPriceChange }) => {
     setOpenCategory((prev) => (prev === categoryId ? null : categoryId));
   };
 
-  const [filtersVisible, setFiltersVisible] = useState(true);
+  const [filtersVisible, setFiltersVisible] = useState(false);
   const toggleFilters = () => {
     if (window.innerWidth <= 1024)
     {
